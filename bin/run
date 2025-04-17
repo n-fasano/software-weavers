@@ -1,7 +1,6 @@
 #!/bin/sh
 
-bin/build
-cd site && php -S 0.0.0.0:31570 2>&1 | egrep -v '(Closing|Accepted)' &
-
+php -S 0.0.0.0:31570 &
 sleep 1
+
 bin/watch

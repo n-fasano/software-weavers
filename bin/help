@@ -1,9 +1,0 @@
-#!/bin/sh
-
-echo "Usage: ./cli <command>"
-echo "Available commands:"
-
-for file in $(find bin -type f); do
-    filename="${file#bin/}"
-    echo "  - $filename"
-done
